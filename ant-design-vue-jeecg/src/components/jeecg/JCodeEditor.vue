@@ -161,7 +161,7 @@
           value: 'x-swift',
           label: 'Swift'
         }, {
-          value: 'x-vue',
+          value: 'x-blog',
           label: 'Vue'
         }, {
           value: 'markdown',

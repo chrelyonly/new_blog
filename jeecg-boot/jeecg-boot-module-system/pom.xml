@@ -47,10 +47,16 @@
 		</dependency>
 
 		<!-- DEMO 示例模块 -->
+<!--		<dependency>-->
+<!--			<groupId>org.jeecgframework.boot</groupId>-->
+<!--			<artifactId>jeecg-boot-module-demo</artifactId>-->
+<!--			<version>${jeecgboot.version}</version>-->
+<!--		</dependency>-->
+<!--		博客模块-->
 		<dependency>
-			<groupId>org.jeecgframework.boot</groupId>
-			<artifactId>jeecg-boot-module-demo</artifactId>
-			<version>${jeecgboot.version}</version>
+			<groupId>blog.chrelyonly.cn</groupId>
+			<artifactId>blog</artifactId>
+			<version>3.2.0</version>
 		</dependency>
 
 	</dependencies>

@@ -2,8 +2,8 @@ package org.jeecg;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jeecg.common.util.oConvertUtils;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -16,11 +16,12 @@ import java.net.UnknownHostException;
 
 /**
 * 单体启动类（采用此类启动为单体模式）
-* 提醒: 需要集成mogodb请删除 exclude={MongoAutoConfiguration.class}
-*/
+* 提醒: 需要集成mongodb请删除 exclude={MongoAutoConfiguration.class}
+ * @author 11725
+ */
 @Slf4j
-@SpringBootApplication
-@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
+@MapperScan("blog.chrelyonly")
+@SpringBootApplication(exclude={MongoAutoConfiguration.class},scanBasePackages = {"org.jeecg","blog.chrelyonly"})
 public class JeecgSystemApplication extends SpringBootServletInitializer {
 
     @Override
